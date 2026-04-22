@@ -27,7 +27,7 @@ export interface ServiceDetail {
   gradient: string;
   accentBg: string;
   features: string[];
-  image: string;
+  image: string | any;
 }
 
 export const servicesDetailData: Record<string, ServiceDetail> = {
@@ -107,6 +107,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Рекомендации по усилению управляемости",
     ],
     image: Image3,
+  },
   "finance-planning": {
     id: "finance-planning",
     title: "Финансовое планирование и модель роста",
