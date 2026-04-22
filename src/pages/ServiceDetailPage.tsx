@@ -16,6 +16,7 @@ import Image from "../assets/photo_2026-03-03_14-39-18.jpg";
 import Image2 from "../assets/photo_2026-03-03_14-39-19.jpg";
 import Image3 from "../assets/IMG_3816.JPG";
 import Image4 from "../assets/IMG_3831.JPG";
+import Image5 from "../assets/IMG_2296.JPG";
 
 export interface ServiceDetail {
   id: string;
@@ -67,8 +68,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Управление каналами привлечения",
       "Связка маркетинга и финансовой модели",
     ],
-    image:
-      "https://images.unsplash.com/photo-1760386129108-d17b9cdfc4fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGlkZW50aXR5JTIwZGVzaWduJTIwY3JlYXRpdmV8ZW58MXx8fHwxNzcyMTAzOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: Image5,
   },
   "marketing-partnership": {
     id: "marketing-partnership",
