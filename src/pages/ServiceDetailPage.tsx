@@ -144,7 +144,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Независимая экспертная позиция",
       "Системность финансовых ориентиров и качество мышления",
     ],
-    image: Image 4,
+    image: Image4,
 };
 
 export function ServiceDetailPage() {
