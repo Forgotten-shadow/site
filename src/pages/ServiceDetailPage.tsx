@@ -12,6 +12,10 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "../components/IMG_errors/ImageWithFallback";
 import { SEO } from "../components/SEO";
+import Image from "../assets/photo_2026-03-03_14-39-18.jpg";
+import Image2 from "../assets/photo_2026-03-03-14-39-19.jpg";
+import Image3 from "../assets/IMG_3828.JPG";
+import Image4 from "../assets/IMG_3831.JPG";
 
 export interface ServiceDetail {
   id: string;
@@ -44,8 +48,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Оценка продуктовой логики и позиционирования",
       "Перечень приоритетных изменений с логикой внедрения",
     ],
-    image:
-      "https://images.unsplash.com/photo-1758691736545-5c33b6255dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBzdHJhdGVneSUyMGJ1c2luZXNzJTIwYW5hbHlzaXN8ZW58MXx8fHwxNzcyMTk4NTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: Image,
   },
   "brand-strategy": {
     id: "brand-strategy",
@@ -84,8 +87,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Управление командой и подрядчиками",
       "Оценка вклада маркетинга в прибыль и капитализацию",
     ],
-    image:
-      "https://images.unsplash.com/photo-1758518727707-b023e285b709?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBhcnRuZXJzaGlwJTIwbWVldGluZyUyMGJvYXJkcm9vbXxlbnwxfHx8fDE3NzIxOTg1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: Image2,
   },
   "finance-diagnostic": {
     id: "finance-diagnostic",
@@ -104,9 +106,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Оценка финансовой устойчивости и запаса прочности",
       "Рекомендации по усилению управляемости",
     ],
-    image:
-      "https://images.unsplash.com/photo-1723987251277-18fc0a1effd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBhbmFseXNpcyUyMGNoYXJ0cyUyMGRhdGF8ZW58MXx8fHwxNzcyMTc4ODM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-  },
+    image: Image3,
   "finance-planning": {
     id: "finance-planning",
     title: "Финансовое планирование и модель роста",
@@ -144,9 +144,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Независимая экспертная позиция",
       "Системность финансовых ориентиров и качество мышления",
     ],
-    image:
-      "https://images.unsplash.com/photo-1565688527174-775059ac429c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25maWRlbnRpYWwlMjBidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzcyMTk4NTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-  },
+    image: Image 4,
 };
 
 export function ServiceDetailPage() {
