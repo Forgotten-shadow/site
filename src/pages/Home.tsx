@@ -1,6 +1,6 @@
 import { Hero } from '../components/Hero';
 import { Services } from '../components/Services';
-import Image from '..assets/IMG_2382.JPG';
+import Image from '../assets/IMG_2382.JPG';
 import { About } from '../components/About';
 import { Stats } from '../components/Stats';
 import { Contact } from '../components/Contact';
