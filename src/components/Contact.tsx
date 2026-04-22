@@ -14,9 +14,34 @@ export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxykB5ZoQNYgV24uA5m4B0eGt28HZCkG434opsQkhp-gqDL0Ehh06xEqj-c-DsMoufY/exec'; // Вставьте сюда ссылку от Google
+
+  try {
+    const response = await fetch(scriptURL, {
+      method: 'POST',
+      mode: 'no-cors', // Важно для Google Apps Script
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    // Так как используется no-cors, мы не можем прочитать ответ напрямую,
+    // но если запрос прошел, считаем его успешным
+    setSubmitStatus('success');
+    setFormData({ name: '', email: '', phone: '', service: '', message: '' }); // Очистка формы
+  } catch (error) {
+    console.error('Ошибка!', error.message);
+    setSubmitStatus('error');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
     
     // Simulate form submission
     setTimeout(() => {
