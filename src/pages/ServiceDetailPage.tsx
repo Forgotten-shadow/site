@@ -17,6 +17,7 @@ import Image2 from "../assets/photo_2026-03-03_14-39-19.jpg";
 import Image3 from "../assets/IMG_3816.JPG";
 import Image4 from "../assets/IMG_3831.JPG";
 import Image5 from "../assets/IMG_2296.JPG";
+import Image6 from "../assets/IMG_3817.JPG";
 
 export interface ServiceDetail {
   id: string;
@@ -125,8 +126,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Система управленческой отчётности",
       "Финансовая структура для масштабирования",
     ],
-    image:
-      "https://images.unsplash.com/photo-1768839720586-71b7ff8b5c59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBwbGFubmluZyUyMGdyb3d0aCUyMG1vZGVsfGVufDF8fHx8MTc3MjE5ODUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: Image6,
   },
   "finance-partnership": {
     id: "finance-partnership",
