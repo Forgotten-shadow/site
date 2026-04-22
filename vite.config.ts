@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  assetsInclude: ['**/*.JPG'],
   base: './', // Важно: точка перед слэшем помогает путям не ломаться
 })
