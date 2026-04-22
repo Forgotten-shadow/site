@@ -14,7 +14,7 @@ import { ImageWithFallback } from "../components/IMG_errors/ImageWithFallback";
 import { SEO } from "../components/SEO";
 import Image from "../assets/photo_2026-03-03_14-39-18.jpg";
 import Image2 from "../assets/photo_2026-03-03_14-39-19.jpg";
-import Image3 from "../assets/IMG_3828.JPG";
+import Image3 from "../assets/IMG_3816.JPG";
 import Image4 from "../assets/IMG_3831.JPG";
 
 export interface ServiceDetail {
