@@ -146,6 +146,7 @@ export const servicesDetailData: Record<string, ServiceDetail> = {
       "Системность финансовых ориентиров и качество мышления",
     ],
     image: Image4,
+  }
 }
 
 export function ServiceDetailPage() {
